@@ -13,7 +13,7 @@ class EventController extends Controller
     {
         if ($request['filter'] === 'Y') {
             $events = Event::query();
-            $categories = [];  // Инициализируем пустой массив
+            $categories = [];
             if ($request->has('type')) {
                 foreach ($request->type as $type) {
                     $categories[] = EventType::fromValue($type)->id();
@@ -38,11 +38,12 @@ class EventController extends Controller
                                ->whereDate('start_date', '<=', Carbon::tomorrow()->addDay());
                         break;
 
+
+
                     default:
-                        // Если schedule приходит как объект с from и to:
                         if (isset($request->schedule['from']) && isset($request->schedule['to'])) {
-                            $events->whereDate('end_date', '>=', $request->schedule['from'])
-                                   ->whereDate('start_date', '<=', $request->schedule['to']);
+                            $events->whereDate('end_date', '>=',Carbon::createFromFormat('d.m.Y', $request->schedule['from'])->format('Y-m-d') )
+                                   ->whereDate('start_date', '<=', Carbon::createFromFormat('d.m.Y', $request->schedule['to'])->format('Y-m-d'));
                         }
                         break;
                 }

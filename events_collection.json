@@ -1,0 +1,102 @@
+{
+    "info": {
+      "name": "Events API Requests",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Events - Today (Show Music)",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/api/events/?filter=Y&schedule=today&type%5B%5D=show-music",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8000",
+            "path": ["api", "events"],
+            "query": [
+              { "key": "filter", "value": "Y" },
+              { "key": "schedule", "value": "today" },
+              { "key": "type[]", "value": "show-music" }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Events - Tomorrow (Show Music)",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/api/events/?filter=Y&schedule=tomorrow&type%5B%5D=show-music",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8000",
+            "path": ["api", "events"],
+            "query": [
+              { "key": "filter", "value": "Y" },
+              { "key": "schedule", "value": "tomorrow" },
+              { "key": "type[]", "value": "show-music" }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Events - After Tomorrow (Quest + Sports Ground)",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/api/events/?filter=Y&schedule=after_tomorrow&type%5B%5D=quest&type%5B%5D=sports-ground",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8000",
+            "path": ["api", "events"],
+            "query": [
+              { "key": "filter", "value": "Y" },
+              { "key": "schedule", "value": "after_tomorrow" },
+              { "key": "type[]", "value": "quest" },
+              { "key": "type[]", "value": "sports-ground" }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Events - Date Range (17.04.2025 to 19.04.2025)",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/api/events/?filter=Y&schedule%5Bfrom%5D=17.04.2025&schedule%5Bto%5D=19.04.2025",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8000",
+            "path": ["api", "events"],
+            "query": [
+              { "key": "filter", "value": "Y" },
+              { "key": "schedule[from]", "value": "17.04.2025" },
+              { "key": "schedule[to]", "value": "19.04.2025" }
+            ]
+          }
+        }
+      },
+      {
+        "name": "Events - Page 2",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:8000/api/events/?page=2",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "8000",
+            "path": ["api", "events"],
+            "query": [
+              { "key": "page", "value": "2" }
+            ]
+          }
+        }
+      }
+    ]
+  }

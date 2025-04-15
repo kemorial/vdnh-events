@@ -22,8 +22,10 @@
     ```bash
     cd vdnh-docker/  \
     && docker composer up -d \ 
+    && cd ../ \
     && composer install \
     && cp .env.example .env \
+    && chmod -R 777 /var/www/storage \
     && php artisan migrate && php artisan db:seed --class=CategorySeeder && php artisan db:seed --class=EventSeeder
     ```
 ### для установки зависимостей можно зайти в контейнер
