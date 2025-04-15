@@ -20,10 +20,13 @@
 
 3. Установите все необходимые зависимости:
     ```bash
-    cd vdnh-docker/ &&
-    docker composer up -d
+    cd vdnh-docker/  \
+    && docker composer up -d \ 
+    && composer install \
+    && cp .env.example .env \
+    && php artisan migrate && php artisan db:seed --class=CategorySeeder && php artisan db:seed --class=EventSeeder
     ```
-
+### для установки зависимостей можно зайти в контейнер
 ## Использование
 
 Простой пример использования проекта:
@@ -33,3 +36,4 @@
  - localhost:8000/api/events/&?filter=Y&schedule=today&type%5B%5D=exhibition2
  - localhost:8000/api/events/&?filter=Y&schedule=tomorrow&type%5B%5D=show-music
  - localhost:8000/api/events/&?filter=Y&schedule=after_tomorrow&type%5B%5D=quest&type%5B%5D=sports-ground
+ - localhost:8000/api/events/&?page=2
