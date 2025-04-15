@@ -35,7 +35,8 @@
 
 через postman сделайте get-запросы на следующие url:
 
- - localhost:8000/api/events/&?filter=Y&schedule=today&type%5B%5D=exhibition2
+ - localhost:8000/api/events/&?filter=Y&schedule=today&type%5B%5D=show-music
  - localhost:8000/api/events/&?filter=Y&schedule=tomorrow&type%5B%5D=show-music
  - localhost:8000/api/events/&?filter=Y&schedule=after_tomorrow&type%5B%5D=quest&type%5B%5D=sports-ground
+ - filter=Y&schedule%5Bfrom%5D=17.04.2025&schedule%5Bto%5D=19.04.2025
  - localhost:8000/api/events/&?page=2
