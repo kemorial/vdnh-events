@@ -20,7 +20,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-15',
                 'end_date' => '2025-04-22',
                 'url' => 'https://example.com/rock-concert',
-                'category_id' => 1
+                'category_id' => 4
             ],
             [
                 'title' => 'Выставка современного искусства',
@@ -28,7 +28,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-17',
                 'end_date' => '2025-04-24',
                 'url' => 'https://example.com/art-exhibition',
-                'category_id' => 2
+                'category_id' => 1
             ],
             [
                 'title' => 'Мастер-класс по фотографии',
@@ -36,7 +36,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-16',
                 'end_date' => '2025-04-23',
                 'url' => 'https://example.com/photography-workshop',
-                'category_id' => 3
+                'category_id' => 5
             ],
             [
                 'title' => 'Театральная премьера "Мечты"',
@@ -60,7 +60,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-20',
                 'end_date' => '2025-04-27',
                 'url' => 'https://example.com/street-food-festival',
-                'category_id' => 6
+                'category_id' => 9
             ],
             [
                 'title' => 'Кинофестиваль "Лучшие фильмы года"',
@@ -68,7 +68,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-22',
                 'end_date' => '2025-04-29',
                 'url' => 'https://example.com/film-festival',
-                'category_id' => 7
+                'category_id' => 2
             ],
             [
                 'title' => 'Тренинг по личностному росту',
@@ -76,7 +76,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-23',
                 'end_date' => '2025-04-30',
                 'url' => 'https://example.com/self-development-workshop',
-                'category_id' => 8
+                'category_id' => 5
             ],
             [
                 'title' => 'Йога-ретрит в горах',
@@ -84,7 +84,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-24',
                 'end_date' => '2025-05-01',
                 'url' => 'https://example.com/yoga-retreat',
-                'category_id' => 9
+                'category_id' => 7
             ],
             [
                 'title' => 'Международная конференция по технологиям',
@@ -92,7 +92,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-25',
                 'end_date' => '2025-05-02',
                 'url' => 'https://example.com/tech-conference',
-                'category_id' => 10
+                'category_id' => 1
             ],
             [
                 'title' => 'Футбольный матч: Лига чемпионов',
@@ -100,7 +100,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-26',
                 'end_date' => '2025-05-03',
                 'url' => 'https://example.com/champions-league-match',
-                'category_id' => 1
+                'category_id' => 7
             ],
             [
                 'title' => 'Книжный фестиваль',
@@ -108,7 +108,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-27',
                 'end_date' => '2025-05-04',
                 'url' => 'https://example.com/book-festival',
-                'category_id' => 2
+                'category_id' => 1
             ],
             [
                 'title' => 'Фестиваль электронной музыки',
@@ -116,7 +116,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-28',
                 'end_date' => '2025-05-05',
                 'url' => 'https://example.com/electronic-music-festival',
-                'category_id' => 3
+                'category_id' => 1
             ],
             [
                 'title' => 'Марафон бегунов',
@@ -124,7 +124,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-04-29',
                 'end_date' => '2025-05-06',
                 'url' => 'https://example.com/marathon-run',
-                'category_id' => 4
+                'category_id' => 7
             ],
             [
                 'title' => 'Тренинг по эффективным продажам',
@@ -140,7 +140,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-05-01',
                 'end_date' => '2025-05-08',
                 'url' => 'https://example.com/startup-festival',
-                'category_id' => 6
+                'category_id' => 8
             ],
             [
                 'title' => 'Ретрит по медитации и осознанности',
@@ -156,7 +156,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-05-03',
                 'end_date' => '2025-05-10',
                 'url' => 'https://example.com/magic-show',
-                'category_id' => 8
+                'category_id' => 9
             ],
             [
                 'title' => 'Семинар по развитию лидерства',
@@ -164,7 +164,7 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-05-04',
                 'end_date' => '2025-05-11',
                 'url' => 'https://example.com/leadership-seminar',
-                'category_id' => 9
+                'category_id' => 8
             ],
             [
                 'title' => 'Киноночь на открытом воздухе',
@@ -180,14 +180,15 @@ class EventSeeder extends Seeder
                 'start_date' => '2025-05-06',
                 'end_date' => '2025-05-13',
                 'url' => 'https://example.com/healthy-eating-conference',
-                'category_id' => 1
+                'category_id' => 6
             ],
             [
                 'title' => 'Городской фестиваль уличного искусства',
                 'description' => 'Яркие уличные выступления и современное искусство.',
                 'start_date' => '2025-05-07',
                 'end_date' => '2025-05-14',
-                'url' => 'https://example.com/street'
+                'url' => 'https://example.com/street',
+                'category_id' => 1
 
             ],
             ];
