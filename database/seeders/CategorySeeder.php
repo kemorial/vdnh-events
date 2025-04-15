@@ -21,11 +21,13 @@ class CategorySeeder extends Seeder
             ['name' => "education"],
             ['name' => "quest"],
             ['name' => "sports-ground"],
+            ['name' => "actual"],
+            ['name' => "excursion"],
             ['name' => "gaming"]
         ];
 
         foreach ($categories as $cat) {
-            Category::firstOrCreate(['slug' => $cat['slug']], $cat);
+            Category::firstOrCreate(['name' => $cat['name']], $cat);
         }
     }
 }
