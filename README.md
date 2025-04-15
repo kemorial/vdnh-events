@@ -40,3 +40,5 @@
  - localhost:8000/api/events/&?filter=Y&schedule=after_tomorrow&type%5B%5D=quest&type%5B%5D=sports-ground
  - filter=Y&schedule%5Bfrom%5D=17.04.2025&schedule%5Bto%5D=19.04.2025
  - localhost:8000/api/events/&?page=2
+
+### коллекция аналогичных запросов для postman лежит в events_collection.json в корне проекта 
