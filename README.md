@@ -26,7 +26,9 @@
     && composer install \
     && cp .env.example .env \
     && chmod -R 777 /var/www/storage \
-    && php artisan migrate && php artisan db:seed --class=CategorySeeder && php artisan db:seed --class=EventSeeder
+    && php artisan migrate \
+    && php artisan db:seed --class=CategorySeeder \
+    && php artisan db:seed --class=EventSeeder
     ```
 ### для установки зависимостей можно зайти в контейнер
 ## Использование
@@ -35,10 +37,10 @@
 
 через postman сделайте get-запросы на следующие url:
 
- - localhost:8000/api/events/&?filter=Y&schedule=today&type%5B%5D=show-music
- - localhost:8000/api/events/&?filter=Y&schedule=tomorrow&type%5B%5D=show-music
- - localhost:8000/api/events/&?filter=Y&schedule=after_tomorrow&type%5B%5D=quest&type%5B%5D=sports-ground
- - filter=Y&schedule%5Bfrom%5D=17.04.2025&schedule%5Bto%5D=19.04.2025
- - localhost:8000/api/events/&?page=2
+ - localhost:8000/api/events/?filter=Y&schedule=today&type%5B%5D=show-music
+ - localhost:8000/api/events/?filter=Y&schedule=tomorrow&type%5B%5D=show-music
+ - localhost:8000/api/events/?filter=Y&schedule=after_tomorrow&type%5B%5D=quest&type%5B%5D=sports-ground
+ - localhost:8000/api/events/?filter=Y&schedule%5Bfrom%5D=17.04.2025&schedule%5Bto%5D=19.04.2025
+ - localhost:8000/api/events/?page=2
 
 ### коллекция аналогичных запросов для postman лежит в events_collection.json в корне проекта 
